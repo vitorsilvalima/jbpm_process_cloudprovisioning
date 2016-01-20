@@ -1,0 +1,48 @@
+
+<form id="106305951">
+<property name="name" value="TI-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="requisicao_cliente" type="InputText" id="815154256">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cliente (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicao_in/cliente"/>
+<property name="outputBinding" value="requisicao_out/cliente"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="requisicao_extra_info" type="InputText" id="1345114767">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;extra_info (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicao_in/extra_info"/>
+<property name="outputBinding" value="requisicao_out/extra_info"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="requisicao_listRequisicao" bag-type="com.vivo.cloud_provision.RequisicaoVM" type="MultipleSubform" id="746460573">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;listRequisicao (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicao_in/listRequisicao"/>
+<property name="outputBinding" value="requisicao_out/listRequisicao"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="3" name="requisicao_numero_projeto" type="InputTextLong" id="1682009121">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;numero_projeto (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicao_in/numero_projeto"/>
+<property name="outputBinding" value="requisicao_out/numero_projeto"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="4" name="ti_approval" type="CheckBox" id="673560945">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;approval_in (ti_approval)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="approval_in"/>
+<property name="outputBinding" value="approval_out"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="requisicao_in" name="#9BCAFA" type="dataModelerEntry" outId="requisicao_out" value="com.vivo.cloud_provision.ListaRequisicaoVM" id="requisicao"/>
+<dataHolder inputId="approval_in" name="#E9E371" type="basicType" outId="approval_out" value="java.lang.Boolean" id="ti_approval"/>
+</form>

@@ -1,0 +1,48 @@
+
+<form id="1914219965">
+<property name="name" value="Network-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="network_approval" type="CheckBox" id="599473839">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;appoval_in (network_approval)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="appoval_in"/>
+<property name="outputBinding" value="approval_out"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="1" name="requisicao_cliente" type="InputText" id="2063783656">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cliente (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicaoIn/cliente"/>
+<property name="outputBinding" value="approval_out/cliente"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="requisicao_extra_info" type="InputText" id="337293822">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;extra_info (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicaoIn/extra_info"/>
+<property name="outputBinding" value="approval_out/extra_info"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="requisicao_listRequisicao" bag-type="com.vivo.cloud_provision.RequisicaoVM" type="MultipleSubform" id="1996285795">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;listRequisicao (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicaoIn/listRequisicao"/>
+<property name="outputBinding" value="approval_out/listRequisicao"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="4" name="requisicao_numero_projeto" type="InputTextLong" id="1064146461">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;numero_projeto (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requisicaoIn/numero_projeto"/>
+<property name="outputBinding" value="approval_out/numero_projeto"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<dataHolder inputId="appoval_in" name="#BBBBBB" type="basicType" outId="approval_out" value="java.lang.Boolean" id="network_approval"/>
+<dataHolder inputId="requisicaoIn" name="#9BCAFA" type="dataModelerEntry" outId="approval_out" value="com.vivo.cloud_provision.ListaRequisicaoVM" id="requisicao"/>
+</form>

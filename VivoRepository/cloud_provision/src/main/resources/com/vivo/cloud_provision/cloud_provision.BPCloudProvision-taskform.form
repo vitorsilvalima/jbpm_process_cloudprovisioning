@@ -1,0 +1,59 @@
+
+<form id="1827588220">
+<property name="name" value="cloud_provision.BPCloudProvision-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="capacity_approval" type="CheckBox" id="786558768">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;capacity_approval (capacity_approval)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="capacity_approval"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="1" name="network_approval" type="CheckBox" id="530931931">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;network_approval (network_approval)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="network_approval"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="requisicao_cliente" type="InputText" id="840447170">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cliente (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="requisicao/cliente"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="requisicao_extra_info" type="InputText" id="1634263475">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;extra_info (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="requisicao/extra_info"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="requisicao_listRequisicao" bag-type="com.vivo.cloud_provision.RequisicaoVM" type="MultipleSubform" id="1731114216">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;listRequisicao (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="requisicao/listRequisicao"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="5" name="requisicao_numero_projeto" type="InputTextLong" id="1835766181">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;numero_projeto (requisicao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="requisicao/numero_projeto"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="6" name="ti_approval" type="CheckBox" id="1745269891">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ti_approval (ti_approval)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="ti_approval"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="capacity_approval" value="java.lang.Boolean" id="capacity_approval"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="network_approval" value="java.lang.Boolean" id="network_approval"/>
+<dataHolder inputId="" name="#9BCAFA" type="dataModelerEntry" outId="requisicao" value="com.vivo.cloud_provision.ListaRequisicaoVM" id="requisicao"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="ti_approval" value="java.lang.Boolean" id="ti_approval"/>
+</form>
